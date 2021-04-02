@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Полоска</title>
+		<style>
+		#background {
+	background-color: grey;
+	width: 100%;
+	}
+	
+		#completion {
+	width: 1%;
+	height: 30px;
+	background-color: orange;
+	text-aligh: right;
+	line-height: 30px;
+	color: white;
+	} 
+	   </style>
+	</head>
+	
+	<body>
+		<h1>A moving progress bar</h1>
+		
+		<div id="background">
+			<div id="completion">1%</div>
+		</div>
+		<br>
+		<button onclick="bar()">Start</button>
+		<script>
+		var i = 0;
+		function bar() {
+			if (i == 0) {
+			i = 1;
+			var compl = document.getElementById("completion");
+			var width = 1;
+			var id = setInterval(growth, 10);
+			function growth() {
+				if (width >= 100) {
+				clearInterval(id);
+				i = 0;
+			   } else {
+				width++;
+				compl.style.width = width + "%";
+				compl.innerHTML = width + "%";
+				}
+			   }
+			  }
+			 }
+		</script>
+		
+	</body>
+</html>
