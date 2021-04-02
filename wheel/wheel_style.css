@@ -1,8 +1,92 @@
-.wheel {
+@media (min-width: 300px) {
+	.wheel {
+	width: 30px;
+	height: auto;
     animation: wheel 3s 1s infinite;
     animation-direction: alternate;	
    }
-   @keyframes wheel {
+}
+
+@media (min-width: 480px) {
+	.wheel {
+	width: 68px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 600px) {
+	.wheel {
+	width: 95px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 768px) {
+	.wheel {
+	width: 125px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1024px) {
+	.wheel {
+	width: 160px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1280px) {
+	.wheel {
+	width: 208px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1330px) {
+	.wheel {
+	width: 222px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1440px) {
+	.wheel {
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1536px) {
+	.wheel {
+	width: 255px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@media (min-width: 1920px) {
+	.wheel {
+	width: 325px;
+	height: auto;
+    animation: wheel 3s 1s infinite;
+    animation-direction: alternate;	
+   }
+}
+
+@keyframes wheel {
 		from { left: 0; transform: translateX(0vw) rotate(0);}				
-		to { left: 100%; transform: translateX(80vw) rotate(3turn);; }
+		to { left: 100%; transform: translateX(82vw) rotate(3turn);; }
 	}
